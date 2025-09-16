@@ -625,6 +625,160 @@ window.closeCollaborationModal = function() {
     }
 }
 
+// Bootcamp Calendar Modal
+window.openBootcampModal = function() {
+    showBootcampCalendarModal();
+}
+
+function showBootcampCalendarModal() {
+    // Remove existing modal if any
+    const existingModal = document.querySelector('.bootcamp-modal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+    
+    // Create modal
+    const modal = document.createElement('div');
+    modal.className = 'bootcamp-modal';
+    modal.innerHTML = `
+        <div class="modal-overlay" onclick="closeBootcampModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-calendar-alt"></i> Add Bootcamp to Calendar</h2>
+                <button class="modal-close" onclick="closeBootcampModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="calendar-options">
+                <h3>🚀 JuniorCoders Holiday Coding Bootcamp</h3>
+                <div class="event-details">
+                    <p><strong>📅 Dates:</strong> December 15-19, 2025</p>
+                    <p><strong>⏰ Time:</strong> 9:00 AM - 1:00 PM daily</p>
+                    <p><strong>👥 Ages:</strong> 6 years and above</p>
+                    <p><strong>📍 Location:</strong> JuniorCoders Zimbabwe</p>
+                    <p><strong>📚 Topics:</strong> Scratch Programming, Basic Robotics, Game Creation</p>
+                </div>
+                <div class="calendar-buttons">
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=JuniorCoders%20Holiday%20Coding%20Bootcamp&dates=20251215T070000Z/20251219T110000Z&details=5-day%20intensive%20coding%20bootcamp%20covering%20Scratch%20programming%2C%20basic%20robotics%2C%20and%20game%20creation.%20Ages%206%2B.%20Daily%20sessions%209AM-1PM.%20Contact%20%2B263%2071%20743%203719%20for%20registration.&location=JuniorCoders%20Zimbabwe&recur=RRULE:FREQ=DAILY;COUNT=5" target="_blank" class="btn btn-primary calendar-btn">
+                        <i class="fab fa-google"></i>
+                        Add to Google Calendar
+                    </a>
+                    <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//JuniorCoders//Bootcamp//EN%0ABEGIN:VEVENT%0AUID:juniorcoders-bootcamp-2025@juniorcoders.zw%0ADTSTAMP:20240916T000000Z%0ADTSTART:20251215T070000Z%0ADTEND:20251219T110000Z%0ASUMMARY:JuniorCoders Holiday Coding Bootcamp%0ADESCRIPTION:5-day intensive coding bootcamp covering Scratch programming, basic robotics, and game creation. Ages 6+. Daily sessions 9AM-1PM. Contact +263 71 743 3719 for registration.%0ALOCATION:JuniorCoders Zimbabwe%0ARRULE:FREQ=DAILY;COUNT=5%0AEND:VEVENT%0AEND:VCALENDAR" download="juniorcoders-bootcamp.ics" class="btn btn-secondary calendar-btn">
+                        <i class="fas fa-download"></i>
+                        Download .ics File
+                    </a>
+                    <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=JuniorCoders%20Holiday%20Coding%20Bootcamp&startdt=2025-12-15T09:00:00&enddt=2025-12-19T13:00:00&body=5-day%20intensive%20coding%20bootcamp%20covering%20Scratch%20programming%2C%20basic%20robotics%2C%20and%20game%20creation.%20Ages%206%2B.%20Contact%20%2B263%2071%20743%203719%20for%20registration.&location=JuniorCoders%20Zimbabwe" target="_blank" class="btn btn-secondary calendar-btn">
+                        <i class="fab fa-microsoft"></i>
+                        Add to Outlook
+                    </a>
+                </div>
+                <div class="registration-reminder">
+                    <p><strong>📞 Ready to Register?</strong></p>
+                    <a href="https://wa.me/263717433719?text=Hi%20JuniorCoders!%20I%20just%20added%20the%20December%20bootcamp%20to%20my%20calendar%20and%20I'm%20ready%20to%20register.%20Please%20send%20me%20the%20registration%20details!" target="_blank" class="btn btn-primary whatsapp-register">
+                        <i class="fab fa-whatsapp"></i>
+                        Register via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Add modal styles
+    modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 0.3s ease;
+    `;
+    
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+    
+    // Add calendar modal CSS if not exists
+    if (!document.getElementById('calendar-modal-styles')) {
+        const style = document.createElement('style');
+        style.id = 'calendar-modal-styles';
+        style.textContent = `
+            .calendar-options {
+                padding: 2rem;
+            }
+            .calendar-options h3 {
+                text-align: center;
+                color: #FF6B35;
+                margin-bottom: 2rem;
+                font-size: 1.8rem;
+            }
+            .event-details {
+                background: #f8f9fa;
+                padding: 1.5rem;
+                border-radius: 10px;
+                margin-bottom: 2rem;
+                border-left: 4px solid #FF6B35;
+            }
+            .event-details p {
+                margin-bottom: 0.8rem;
+                color: #2C3E50;
+            }
+            .event-details p:last-child {
+                margin-bottom: 0;
+            }
+            .calendar-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+            .calendar-btn {
+                justify-content: center;
+                text-decoration: none;
+            }
+            .registration-reminder {
+                text-align: center;
+                padding-top: 2rem;
+                border-top: 2px solid #eee;
+            }
+            .registration-reminder p {
+                margin-bottom: 1rem;
+                color: #2C3E50;
+                font-size: 1.1rem;
+            }
+            .whatsapp-register {
+                background: #25D366 !important;
+                text-decoration: none;
+            }
+            .whatsapp-register:hover {
+                background: #128C7E !important;
+            }
+            @media (max-width: 768px) {
+                .calendar-options {
+                    padding: 1rem;
+                }
+                .calendar-options h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
+window.closeBootcampModal = function() {
+    const modal = document.querySelector('.bootcamp-modal');
+    if (modal) {
+        modal.style.animation = 'fadeOut 0.3s ease';
+        setTimeout(() => {
+            modal.remove();
+            document.body.style.overflow = '';
+        }, 300);
+    }
+}
+
 function showNotification(message, type = 'info') {
     // Remove existing notifications
     const existingNotifications = document.querySelectorAll('.notification');
