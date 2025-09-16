@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuniorCoders - Robotics & Coding Education in Zimbabwe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>JuniorCoders</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#collaborate" class="btn btn-collaborate"><i class="fas fa-handshake"></i> Collaborate</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Empowering Young Minds Through
+                    <span class="highlight">Robotics & Coding</span>
+                </h1>
+                <p class="hero-description">
+                    Based in Zimbabwe, JuniorCoders is leading the way in STEM education across Africa. 
+                    We specialize in kids coding lessons, Scratch programming, Godot game development, 
+                    web development, and robotics education - taking students from visual programming 
+                    to advanced coding skills.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('programs')">
+                        <i class="fas fa-play"></i>
+                        Start Learning
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Students Taught</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Fun Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="robot-animation">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="floating-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fas fa-gamepad"></i>
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About JuniorCoders</h2>
+                <p>Pioneering STEM education in Zimbabwe and across Africa</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>
+                        JuniorCoders is dedicated to bridging the digital divide in Africa by providing 
+                        world-class robotics and programming education to young learners. We believe 
+                        that every child deserves access to cutting-edge technology education, regardless 
+                        of their background.
+                    </p>
+                    <h3>Our Approach</h3>
+                    <p>
+                        We start with visual programming using Scratch and Blockly to make coding accessible and fun, 
+                        then gradually progress to text-based programming languages and web development. Our curriculum 
+                        includes exciting game development using Godot engine, ensuring students stay engaged while 
+                        learning essential programming concepts through hands-on projects.
+                    </p>
+                    <div class="africa-pride">
+                        <i class="fas fa-heart"></i>
+                        <span>Proudly serving Zimbabwe and the African continent</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Students Learning Together</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Programs</h2>
+                <p>From visual programming to advanced game development</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="card-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Scratch & Visual Programming</h3>
+                    <p>
+                        Start your coding journey with Scratch and visual programming. Learn programming 
+                        concepts by dragging and dropping code blocks - perfect for beginners!
+                    </p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Scratch programming platform</li>
+                        <li><i class="fas fa-check"></i> Visual drag-and-drop interface</li>
+                        <li><i class="fas fa-check"></i> Logic and problem-solving skills</li>
+                    </ul>
+                    <div class="program-age">Ages 6-10</div>
+                </div>
+
+                <div class="program-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robotics & Hardware</h3>
+                    <p>
+                        Build and program real robots! Learn about sensors, motors, and 
+                        microcontrollers while creating amazing robotic projects.
+                    </p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Hands-on robot building</li>
+                        <li><i class="fas fa-check"></i> Arduino & Raspberry Pi</li>
+                        <li><i class="fas fa-check"></i> Sensor integration</li>
+                    </ul>
+                    <div class="program-age">Ages 8-16</div>
+                </div>
+
+                <div class="program-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Text Programming</h3>
+                    <p>
+                        Transition to real programming languages like Python, JavaScript, 
+                        and more. Build actual applications and websites!
+                    </p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Python & JavaScript</li>
+                        <li><i class="fas fa-check"></i> Web development basics</li>
+                        <li><i class="fas fa-check"></i> Real-world projects</li>
+                    </ul>
+                    <div class="program-age">Ages 10-18</div>
+                </div>
+
+                <div class="program-card">
+                    <div class="card-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>
+                        Create your own games using Godot engine! Learn game design principles, storytelling, 
+                        and programming while building fun, interactive games.
+                    </p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Godot game engine</li>
+                        <li><i class="fas fa-check"></i> 2D & 3D game creation</li>
+                        <li><i class="fas fa-check"></i> Game design principles</li>
+                    </ul>
+                    <div class="program-age">Ages 12-18</div>
+                </div>
+
+                <div class="program-card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Projects Assist</h3>
+                    <p>
+                        University students get expert help with practical assignments 
+                        and developing hands-on projects. From concept to completion.
+                    </p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Practical assignments</li>
+                        <li><i class="fas fa-check"></i> Project development</li>
+                        <li><i class="fas fa-check"></i> Code review & debugging</li>
+                    </ul>
+                    <div class="program-age">University Level</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose JuniorCoders?</h2>
+                <p>Leading STEM education in Africa with proven results</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Our passionate educators have years of experience in both technology and teaching young minds.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Modern Curriculum</h3>
+                    <p>Stay current with industry trends and technologies that prepare students for the future.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Small Class Sizes</h3>
+                    <p>Personalized attention with small groups ensuring every student gets the support they need.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Project-Based Learning</h3>
+                    <p>Learn by doing with real projects that students can be proud to showcase.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>African Focus</h3>
+                    <p>Curriculum designed with African context and challenges in mind, by Africans for Africans.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Inclusive Environment</h3>
+                    <p>Welcoming space for all children regardless of background, gender, or previous experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section id="collaborate" class="collaborate">
+        <div class="container">
+            <div class="section-header">
+                <h2>School Partnerships</h2>
+                <p>Bring cutting-edge robotics and coding education to your school</p>
+            </div>
+            <div class="collaborate-content">
+                <div class="collaborate-info">
+                    <h3>Transform Your School's STEM Program</h3>
+                    <p>
+                        Partner with JuniorCoders to integrate robotics and coding into your school curriculum. 
+                        We offer comprehensive programs for schools looking to enhance their STEM education 
+                        with hands-on technology learning.
+                    </p>
+                    <div class="collaboration-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div>
+                                <h4>Curriculum Integration</h4>
+                                <p>Seamlessly integrate coding and robotics into your existing syllabus</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-users-cog"></i>
+                            <div>
+                                <h4>Teacher Training</h4>
+                                <p>Comprehensive training programs for your teaching staff</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <h4>Equipment & Resources</h4>
+                                <p>Access to robotics kits, software, and learning materials</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>Student Competitions</h4>
+                                <p>Participate in coding competitions and robotics challenges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collaborate-cta">
+                        <button class="btn btn-primary" onclick="openCollaborationForm()">
+                            <i class="fas fa-envelope"></i>
+                            Request Partnership Info
+                        </button>
+                        <a href="tel:+263717433719" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Call Us Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your child's coding journey? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Harare, Zimbabwe<br>Serving all of Zimbabwe and Africa</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+263 71 743 3719<br>Mon-Fri 8AM-6PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>your-email@domain.com<br>contact@juniorcoders.zw</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Links</h3>
+                            <p><a href="YOUR_LINKTREE_URL" target="_blank" style="color: #FFD700;">LinkTree</a><br>
+                               <a href="YOUR_WEBSITE_URL" target="_blank" style="color: #FFD700;">Website</a></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100095689950041&mibextid=ZbWKwL" target="_blank" class="social-link" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/juniorcoderszw/" target="_blank" class="social-link" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/juniorcoderszw/" target="_blank" class="social-link" title="Connect on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.tiktok.com/@juniorcodersafrica" target="_blank" class="social-link" title="Follow us on TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="program" name="program" required>
+                                <option value="">Select a Program</option>
+                                <option value="scratch">Scratch & Visual Programming</option>
+                                <option value="robotics">Robotics & Hardware</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="godot-games">Godot Game Development</option>
+                                <option value="projects-assist">Projects Assist (University)</option>
+                                <option value="all">All Programs</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your child's interests and any questions you have..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-robot"></i>
+                    <span>JuniorCoders</span>
+                </div>
+                <p>Empowering the next generation of African innovators through robotics and coding education.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#programs">Programs</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JuniorCoders Zimbabwe. All rights reserved. Made with <i class="fas fa-heart"></i> in Africa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
