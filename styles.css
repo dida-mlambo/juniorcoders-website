@@ -1139,18 +1139,6 @@ section {
     .contact-form {
         padding: 1.5rem;
     }
-    
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        bottom: 15px;
-        right: 15px;
-    }
-    
-    .whatsapp-tooltip {
-        display: none;
-    }
 }
 
 /* Floating WhatsApp Button */
@@ -1227,6 +1215,20 @@ section {
     }
     100% {
         box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .whatsapp-tooltip {
+        display: none;
     }
 }
 
